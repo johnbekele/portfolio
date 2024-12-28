@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navBarItem {
+  font-size: 14px;
+  color: var(--text-grey-color);
+  font-family: "Fira Code", monospace;
+}
+
+.navBarItem li a {
+  font-family: "Fira Code", monospace;
+}
+
+.navBarItem li a:hover {
+  animation-name: changeNavItemColor;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes changeNavItemColor {
+  to {
+    color: var(--text-green-color);
+  }
+}
+
+.navBarItem span {
+  color: var(--text-green-color);
+}
