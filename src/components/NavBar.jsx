@@ -12,7 +12,7 @@ const NavBar = () => {
         </div>
         <ul className="navBarItem flex space-x-14">
           <li>
-            <a href="#aboutme">
+            <a href="#aboutMe">
               <span>01.</span> About
             </a>{" "}
           </li>

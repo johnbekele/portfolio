@@ -6,13 +6,15 @@ import NavBar from "./components/NavBar";
 import About from "./components/AboutMe";
 import Landingpage from "./components/LandingPage";
 import Footer from "./components/Footer";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Experience from "./components/Experience";
 function App() {
   return (
-    <div className="App">
+    <div className="App space-y-20">
       <NavBar />
       <Landingpage />
       <About />
+      <Experience />
       <Footer />
     </div>
   );

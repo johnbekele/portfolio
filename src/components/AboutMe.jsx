@@ -4,7 +4,10 @@ import photo from "../assets/me.png";
 
 function About() {
   return (
-    <div id="aboutMe" className="sectionContainer  aboutMeContainer">
+    <div
+      id="aboutMe"
+      className="sectionContainer  justify-center aboutMeContainer"
+    >
       <div className="aboutMeContent">
         <div className="flexSpaceBetween">
           <h2 id="aboutMe" className="sectionTitle">

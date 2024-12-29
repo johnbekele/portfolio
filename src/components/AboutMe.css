@@ -37,6 +37,12 @@
   font-family: var(--secondary-font);
 }
 
+.list li:hover {
+  color: var(--text-green-color);
+  opacity: 1;
+  transition: 0.2s;
+}
+
 .myPhotoReveal {
   margin-top: 9%;
   margin-right: 5%;
@@ -68,7 +74,6 @@
 
 @keyframes boxShadow {
   to {
-    background-color: red;
     box-shadow: 4px 4px 2px 2px var(--text-green-color);
   }
 }

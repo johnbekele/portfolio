@@ -1,54 +1,51 @@
 import React from "react";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+  faTelegram,
+} from "@fortawesome/free-brands-svg-icons";
+
 function Footer() {
-  let contacts = [
+  const contacts = [
+    { icon: faGithub, link: "https://github.com/yohansbekele12" },
+    { icon: faInstagram, link: "https://www.instagram.com/john_yebk/" },
     {
-      icon: "fa fa-github",
-      link: "https://github.com/dagmawibabi/",
+      icon: faLinkedin,
+      link: "https://www.linkedin.com/in/yohans-b-a1a975205/",
     },
-    {
-      icon: "fa fa-instagram",
-      link: "https://www.instagram.com/dagmawibabi/",
-    },
-    {
-      icon: "fa fa-linkedin",
-      link: "https://www.linkedin.com/in/dagmawibabi/",
-    },
-    {
-      icon: "fa fa-twitter",
-      link: "https://twitter.com/DagmawiBabi",
-    },
-    {
-      icon: "fa fa-telegram",
-      link: "https://t.me/Dagmawi_Babi/",
-    },
+    { icon: faTwitter, link: "https://twitter.com/yohansbekele" },
+    { icon: faTelegram, link: "https://t.me/jonatan/" },
   ];
 
   return (
     <div>
       <div className="footerContainer">
-        <div className="contactList">
-          {contacts.map((contact, index) => {
-            return (
-              <a
-                key={index}
-                href={contact.link}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className={contact.icon} style={{ fontSize: "26px" }}></i>
-              </a>
-            );
-          })}
+        <div className="contactList space-y-10">
+          {contacts.map((contact, index) => (
+            <a
+              key={index}
+              href={contact.link}
+              target="_blank"
+              rel="noreferrer"
+              className="iconLink"
+            >
+              {/* Correct usage of FontAwesomeIcon */}
+              <FontAwesomeIcon icon={contact.icon} size="2x" />
+            </a>
+          ))}
           <div className="verticalLine"></div>
         </div>
         <div className="footerRemark">
-          <p> Built Yohans Bekele </p>
-          <p> {Date().substring(0, 16)} </p>
+          <p>Built by Yohans Bekele</p>
+          <p>{new Date().toDateString()}</p>
         </div>
         <div className="email">
           <a href="mailto:1babidagi@gmail.com">
-            <p> 1babidagi@gmail.com </p>
+            <p>yohansdemisie@gmail.com</p>
           </a>
           <div className="verticalLine moveRight"></div>
         </div>

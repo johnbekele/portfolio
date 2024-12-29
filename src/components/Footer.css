@@ -1,10 +1,11 @@
+/* Create color variables */
 .footerContainer {
   font-size: 14px;
   padding: 220px 0px 20px;
   text-align: center;
   /* display: flex;
-    justify-content: space-between;
-    margin: 0 50px; */
+  justify-content: space-between;
+  margin: 0 50px; */
 }
 
 .footerContainer p {
