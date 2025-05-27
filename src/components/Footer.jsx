@@ -17,8 +17,7 @@ function Footer() {
       icon: faLinkedin,
       link: "https://www.linkedin.com/in/yohans-b-a1a975205/",
     },
-    { icon: faTwitter, link: "https://twitter.com/yohansbekele" },
-    { icon: faTelegram, link: "https://t.me/jonatan/" },
+  
   ];
 
   return (

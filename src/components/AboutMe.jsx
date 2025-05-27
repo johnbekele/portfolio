@@ -16,16 +16,11 @@ function About() {
           </h2>
           <div className="horizontalLine"></div>
         </div>
-        <div className="someSpace">
-          <p>
-            Hello, I'm Yohans Bekele (John) I’m a creative and passionate tech
-            enthusiast who loves building innovative solutions. Currently, I’m
-            working with the PERN stack (PostgreSQL, Express.js, React, Node.js)
-            and thoroughly enjoying the process. I’m also excited to dive into
-            Electron.js to develop desktop applications focused on delivering
-            impactful solutions. Collaboration and creativity fuel my journey,
-            and I’m always eager to create, learn, and work on meaningful
-            projects. Let’s connect and bring ideas to life!{" "}
+        <div className="someSpace ">
+          <p className="hover:text-amber-50 text-small">
+          Hello, I'm Yohans Bekele (John), a tech enthusiast specializing in the MERN stack (MongoDB, Express.js, React, Node.js) for web application development. I utilize AWS and Amazon RDS with PostgreSQL for robust backend services. My Linux expertise supports efficient server management.
+   <br />
+I work with network testing tools like Nmap, Bettercap, Wireshark, and Metasploit, developing scripts for security assessments. I have a strong understanding of vulnerabilities including man-in-the-middle attacks, SQL injection, cross-site scripting (XSS), and privilege escalation. Currently, I'm expanding my skills in cloud architecture.
           </p>
 
           <br></br>
@@ -52,10 +47,19 @@ function About() {
               <li>Dockers</li>
               <li> git </li>
               <li> AWS </li>
+              <li> Amazon RDS </li>
+              <li> Linux </li>
+              <li> Bash </li>
             </ul>
             <ul>
               <li> Sales Force </li>
               <li> ERP </li>
+              <li> Nmap </li>
+              <li>Service Now </li>
+              <li> Metasploit </li>
+              <li> Wireshark </li>
+              <li> Bettercap </li>
+
             </ul>
           </div>
         </div>
