@@ -15,7 +15,7 @@ const ContactMe = () => {
                         I’m looking for great new opportunities so my inbox is always open. Whether you have a question or just want to say hi, 
                         I will get back to you as soon as possible !
                     </p>
-                    <a href='yohans.Bekele@thomsonreuters.com' rel='noreferrer'>
+                    <a href='mailto:yohans.Bekele@thomsonreuters.com' rel='noreferrer'>
                         <button className='outlinedBtn' style={{padding: '15px 50px'}}> Say Hello </button>
                     </a>
                 </div>
