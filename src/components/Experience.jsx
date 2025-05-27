@@ -5,27 +5,30 @@ const Experience = () => {
   let tabs = [
     {
       tab: "Thomson Reuters",
-      role: "Product Application Specialist",
+      role: "Product Application support Specialist",
       tabTitle: "Hybrid Work",
-      duration: "July 2024 - Present",
+      duration: "August 2024 - Present",
       details:
         "Providing application support and expertise for product solutions.",
       list: [
         "Utilized Microsoft SQL Server and XML for data management.",
         "Collaborated on hybrid work projects across Poland.",
         "Developed and optimized application processes for clients.",
+        "Implemented solutions to enhance product functionality and user experience.",
+        "manage client Citrix environments, ensuring seamless application performance and user satisfaction.",
+        "investigte and resolve complex Microsoft SQL Server issues, demonstrating strong problem-solving skills and technical expertise.",
       ],
     },
     {
       tab: "State Street",
       role: "Financial Analyst",
       tabTitle: "Data Analysis",
-      duration: "April 2023 - December 2024",
+      duration: "March 2023 - July 2024",
       details:
-        "Conducted financial and statistical data analysis in a hybrid environment.",
+        "Executed daily financial reconciliations with meticulous accuracy, indicative of strong problem-solving skills, a vital asset for software support roles.",
       list: [
-        "Leveraged data science skills to analyze financial trends.",
-        "Performed statistical data analysis to support decision-making.",
+        "Developed advanced Excel macros to enhance financial reporting efficiency,showcasing an ability to optimize and support complex software systems.",
+        "Championed new regulatory compliance initiatives, ensuring adaptability and a keen understanding of legal and compliance software functionalities.",
         "Collaborated with international teams on financial forecasting.",
       ],
     },
@@ -33,13 +36,13 @@ const Experience = () => {
       tab: "Infosys",
       role: "Senior Process Executive",
       tabTitle: "Remote Operations",
-      duration: "April 2022 - May 2023",
+      duration: "March 2022 - April 2023",
       details:
         "Managed processes and developed Salesforce-based solutions remotely.",
       list: [
-        "Designed and implemented JavaScript solutions for process automation.",
-        "Enhanced Salesforce development practices.",
-        "Streamlined remote process execution workflows.",
+        "Spearheaded the development and implementation of a comprehensive business process management system, focusing on optimizing IT processes and enhancing system efficiencies across the organization.",
+        "Led a transformative initiative to redesign the customer onboarding process, integrating advanced IT solutions to significantly improve user experience and operational effectiveness.",
+        "Facilitated effective cross-departmental collaboration to integrate customer feedback into IT process improvements, directly contributing to a 15% increase in customer satisfaction scores through enhanced IT service management strategies.",
       ],
     },
     {
