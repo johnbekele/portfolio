@@ -6,9 +6,11 @@ import NavBar from "./components/NavBar";
 import About from "./components/AboutMe";
 import Landingpage from "./components/LandingPage";
 import Footer from "./components/Footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import ContactMe from "./components/ContactMe";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function App() {
   return (
     <div className="App space-y-20">
@@ -17,6 +19,7 @@ function App() {
       <About />
       <Experience />
       <Projects />
+     <ContactMe />
       <Footer />
     </div>
   );

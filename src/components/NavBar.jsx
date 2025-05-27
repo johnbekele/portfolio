@@ -27,7 +27,7 @@ const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="#contact">
+            <a href="#contactMe">
               <span>04.</span> Contact
             </a>
           </li>
