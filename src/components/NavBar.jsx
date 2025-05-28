@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
+import resume from "../assets/resume/yohans(John)_bekele_Resume.pdf"; // Ensure you have a resume file in the assets folder
 
 const NavBar = () => {
   return (
@@ -32,7 +33,7 @@ const NavBar = () => {
             </a>
           </li>
           <li>
-            <a href="#resume" rel="noreferrer" target="_blank">
+            <a href={resume} rel="noreferrer" target="_blank">
               <button className="btn btn-outline btn-success">Resume</button>
             </a>
           </li>
