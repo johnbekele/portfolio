@@ -6,7 +6,7 @@ function About() {
   return (
     <div
       id="aboutMe"
-      className="sectionContainer  justify-center aboutMeContainer"
+      className="sectionContainer  justify-center aboutMeContainer "
     >
       <div className="aboutMeContent">
         <div className="flexSpaceBetween">
@@ -18,7 +18,7 @@ function About() {
         </div>
         <div className="someSpace ">
           <p className="hover:text-amber-50 text-small">
-          Hello, I'm Yohans Bekele (John), a tech enthusiast specializing in the MERN stack (MongoDB, Express.js, React, Node.js) for web application development. I utilize AWS and Amazon RDS with PostgreSQL for robust backend services. My Linux expertise supports efficient server management.
+          Hello, I'm Yohans (John) Bekele , a tech enthusiast specializing in the MERN stack (MongoDB, Express.js, React, Node.js) for web application development. I utilize AWS and Amazon RDS with PostgreSQL for robust backend services. My Linux expertise supports efficient server management.
    <br />
 I work with network testing tools like Nmap, Bettercap, Wireshark, and Metasploit, developing scripts for security assessments. I have a strong understanding of vulnerabilities including man-in-the-middle attacks, SQL injection, cross-site scripting (XSS), and privilege escalation. Currently, I'm expanding my skills in cloud architecture.
           </p>
@@ -27,7 +27,7 @@ I work with network testing tools like Nmap, Bettercap, Wireshark, and Metasploi
           <p>Here are a few technologies I’ve been working with recently:</p>
           <div
             className="flexSpaceBetween list"
-            style={{ width: "440px", marginLeft: "15px" }}
+            style={{ width: "540px", marginLeft: "10px" }}
           >
             <ul>
               <li> React </li>
@@ -56,9 +56,18 @@ I work with network testing tools like Nmap, Bettercap, Wireshark, and Metasploi
               <li> ERP </li>
               <li> Nmap </li>
               <li>Service Now </li>
+              
+
+            </ul>
+            <ul>
+              
+              <li> Nmap </li>
+              <li> Burp Suite </li>
               <li> Metasploit </li>
               <li> Wireshark </li>
               <li> Bettercap </li>
+              <li>Nessuss</li>
+              <li>Snort</li>
 
             </ul>
           </div>

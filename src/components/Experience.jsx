@@ -67,7 +67,7 @@ const Experience = () => {
   }
   return (
     <div>
-      <div id="experience">
+      <div id="experience my-10">
         <div className="sectionContainer experienceContainer">
           <div className="flexSpaceBetween">
             <h2 className="sectionTitle">

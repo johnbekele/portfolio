@@ -13,7 +13,7 @@ const Projects = () => {
             projectTitle: 'Book and Memories - Book Sharing Social Media App',
             
             projectDescription: 'An App where people can share their experiences with books, discover new reads, and connect with others who share similar interests. ',
-            projectTechStack: ['React', 'NodeJS', 'Express', 'MongoDB', 'Mongoose', 'Talwind', 'AWS EC2','Vercel'],
+            projectTechStack: ['React', 'NodeJS', 'Express', 'MongoDB', 'Mongoose', 'Talwind', 'AWS EC2','Vercel','gemini AI'],
             githubRepo: 'https://github.com/johnbekele/Book-and-Memories',
             otherLink: 'https://book-and-memories.vercel.app/'
         },

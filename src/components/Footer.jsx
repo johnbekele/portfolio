@@ -39,7 +39,7 @@ function Footer() {
           <div className="verticalLine"></div>
         </div>
         <div className="footerRemark">
-          <p>Built by Yohans Bekele</p>
+          <p>Built by Yohans(John) Bekele</p>
           <p>{new Date().toDateString()}</p>
         </div>
         <div className="email">
