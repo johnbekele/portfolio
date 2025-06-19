@@ -20,8 +20,8 @@ function LandingPage() {
           I am a Creative Developer .
         </p>
         <p className="font-main text-gray-400">
-         with a keen interest in cybersecurity and penetration testing.
-         My experience in web and mobile application development has equipped me with strong technical skills and a problem-solving mindset. 
+         with a keen interest in Sytem Design process Automation and DAta analysis 
+         My experience in web and mobile application development ,Data analysis ,System adminisratore  has equipped me with strong technical skills and a problem-solving mindset. 
          I am passionate about exploring new technologies and continuously expanding my knowledge in the field.
          With a commitment to innovation and learning, I am eager to navigate new challenges and contribute effectively in dynamic environments. </p>
         <Button className="outlinedBtn ca" onClick={handleClick}> <p className="text-white">Check out my latest Project</p></Button>
