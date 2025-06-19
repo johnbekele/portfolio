@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import resume from "../assets/resume/yohans(John)_bekele_Resume.pdf"; // Ensure you have a resume file in the assets folder
+import resume from "../assets/resume/yohans(John)_bekele_Resume Application support analyst.pdf"; // Ensure you have a resume file in the assets folder
 
 const NavBar = () => {
   return (
