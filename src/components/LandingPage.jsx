@@ -14,7 +14,7 @@ function LandingPage() {
       <div className="container flex justify-center space-y-7 flex-col ">
         <span className="font-special font-main">Hi , My name is </span>
         <p className="text-5xl font-bold font-main text-slate-100">
-          JOHN
+          JOHN BEKELE
         </p>
         <p className="text-5xl text-slate-100 font-bold font-main">
           I am a Creative Developer .
