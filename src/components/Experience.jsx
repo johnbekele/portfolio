@@ -2,63 +2,85 @@ import React, { useState } from "react";
 import "./Experience.css";
 
 const Experience = () => {
-  let tabs = [
-    {
-      tab: "Thomson Reuters",
-      role: "Product Application support Specialist",
-      tabTitle: "Hybrid Work",
-      duration: "August 2024 - Present",
-      details:
-        "Providing application support and expertise for product solutions.",
-      list: [
-        "Utilized Microsoft SQL Server and XML for data management.",
-        "Collaborated on hybrid work projects across Poland.",
-        "Developed and optimized application processes for clients.",
-        "Implemented solutions to enhance product functionality and user experience.",
-        "manage client Citrix environments, ensuring seamless application performance and user satisfaction.",
-        "investigte and resolve complex Microsoft SQL Server issues, demonstrating strong problem-solving skills and technical expertise.",
-      ],
-    },
-    {
-      tab: "State Street",
-      role: "Financial Analyst",
-      tabTitle: "Data Analysis",
-      duration: "March 2023 - July 2024",
-      details:
-        "Executed daily financial reconciliations with meticulous accuracy, indicative of strong problem-solving skills, a vital asset for software support roles.",
-      list: [
-        "Developed advanced Excel macros to enhance financial reporting efficiency,showcasing an ability to optimize and support complex software systems.",
-        "Championed new regulatory compliance initiatives, ensuring adaptability and a keen understanding of legal and compliance software functionalities.",
-        "Collaborated with international teams on financial forecasting.",
-      ],
-    },
-    {
-      tab: "Infosys",
-      role: "Senior Process Executive",
-      tabTitle: "Remote Operations",
-      duration: "March 2022 - April 2023",
-      details:
-        "Managed processes and developed Salesforce-based solutions remotely.",
-      list: [
-        "Spearheaded the development and implementation of a comprehensive business process management system, focusing on optimizing IT processes and enhancing system efficiencies across the organization.",
-        "Led a transformative initiative to redesign the customer onboarding process, integrating advanced IT solutions to significantly improve user experience and operational effectiveness.",
-        "Facilitated effective cross-departmental collaboration to integrate customer feedback into IT process improvements, directly contributing to a 15% increase in customer satisfaction scores through enhanced IT service management strategies.",
-      ],
-    },
-    {
-      tab: "Cisco",
-      role: "Data Analyst",
-      tabTitle: "Remote Analytics",
-      duration: "August 2022 - February 2023",
-      details:
-        "Supported data-driven decision-making through technical leadership.",
-      list: [
-        "Applied data science skills to large datasets for actionable insights.",
-        "Demonstrated technical project leadership in analytics.",
-        "Collaborated with cross-functional teams to meet business goals.",
-      ],
-    },
-  ];
+ 
+    let tabs = [
+      {
+        tab: "Thomson Reuters",
+        role: "Product Application Support Specialist",
+        tabTitle: "Hybrid Work",
+        duration: "August 2024 – Present",
+        details:
+          "Orchestrate end-to-end environment setup and provide expert product application support for client deployments and legacy software solutions.",
+        list: [
+          "Set up Microsoft SQL Server, registry paths, and network/server provisioning to ensure smooth system integration.",
+          "Verify and optimize infrastructure components (databases, VMs, connectivity) for high performance and availability.",
+          "Investigate and resolve data discrepancies, ensuring data integrity for critical business workflows.",
+          "Collaborate with platform and dev teams to fix bugs, implement features, and deliver custom solutions.",
+          "Analyze and resolve chronic or major incidents in coordination with cross-functional teams.",
+        ],
+      },
+      {
+        tab: "State Street",
+        role: "Financial Analyst (Technology & Automation Focus)",
+        tabTitle: "Data Analysis & Automation",
+        duration: "March 2023 – July 2024",
+        details:
+          "Specialized in trade analysis, automation, and technical reporting to support financial operations.",
+        list: [
+          "Performed quantitative trade analysis using advanced Excel, VBA, and VS Code for automation.",
+          "Automated monthly reporting workflows to increase accuracy and reduce turnaround time.",
+          "Built technical dashboards and data visualizations for actionable insights.",
+          "Tracked and analyzed Trade and KYC incident reports on demand.",
+        ],
+      },
+      {
+        tab: "Cisco",
+        role: "Data Analyst (MSSP Migration Project)",
+        tabTitle: "Remote Data Migration",
+        duration: "August 2022 – February 2023",
+        details:
+          "Delivered technical support and automation for large-scale data migration projects.",
+        list: [
+          "Authored technical guides and knowledge base articles on best practices and troubleshooting.",
+          "Created and maintained Python scripts to automate repetitive tasks and improve data quality.",
+          "Developed SQL scripts to handle ETL tasks from multiple sources (Oracle, MySQL, CSV).",
+          "Built Bash scripts for data validation, cleansing, and transformation, reducing manual effort by 30%.",
+          "Implemented Apache NiFi data pipelines for efficient data processing and transformation.",
+        ],
+      },
+      {
+        tab: "Infosys",
+        role: "Senior Process Executive (Application Performance)",
+        tabTitle: "Remote Operations & Monitoring",
+        duration: "March 2022 – April 2023",
+        details:
+          "Monitored application performance, handled incident management, and automated operations to optimize reliability.",
+        list: [
+          "Analyzed performance on Health Suite Digital Platform using New Relic, ensuring high availability.",
+          "Used ServiceNow for incident, problem, and change management, and JIRA for issue tracking.",
+          "Automated daily monitoring, reporting, and maintenance tasks with JavaScript, Python, and SQL.",
+          "Performed root cause analysis and collaborated with teams to resolve incidents and prevent recurrences.",
+          "Created detailed performance reports and translated insights into actionable recommendations.",
+        ],
+      },
+      {
+        tab: "Commercial Bank of Ethiopia",
+        role: "Data Analytics Engineer",
+        tabTitle: "On-site Analytics",
+        duration: "Feb 2017 – Jan 2019",
+        details:
+          "Led KYC data analysis and compliance reporting for risk and AML monitoring.",
+        list: [
+          "Analyzed customer data for KYC compliance using SQL and advanced analytics tools.",
+          "Built interactive dashboards (Tableau/Power BI) for continuous monitoring.",
+          "Automated routine KYC data validation and reporting using SQL and VS Code scripts.",
+          "Worked with compliance teams to review flagged accounts and document AML findings.",
+          "Maintained process documentation to support audits and regulatory reviews.",
+        ],
+      },
+    ];
+
+  
 
   const [curTabContent, setCurTabContent] = useState(0);
 

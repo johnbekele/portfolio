@@ -3,6 +3,7 @@ import FolderProject from './FolderProject';
 import BookMemo from '../assets/projects/BookMemo.png';
 import GeezOS from '../assets/projects/GeezOS.png';
 import WorkerDay from '../assets/projects/WorkerDay.png';
+import LawConnect from '../assets/projects/LawConnect.png'
 import './Projects.css';
 
 const Projects = () => {
@@ -22,8 +23,16 @@ const Projects = () => {
             projectTitle: 'Geez Network Scanning Tool',
             projectDescription: ' is a security assessment tool designed for macOS. It provides a simple interface for scanning IP addresses and websites, displaying results in a terminal-style output window.',
             projectTechStack: ['Electron js', 'NodeJS', 'Bash', 'PWD', 'Mongoose', 'Talwind',"CSS"],
-            githubRepo: 'https://github.com/johnbekele/Book-and-Memories',
-            otherLink: 'https://book-and-memories.vercel.app/'
+            githubRepo: 'https://github.com/johnbekele/Geez-Offensive-Security-Scanner.git',
+            otherLink: 'https://github.com/johnbekele/Geez-Offensive-Security-Scanner.git'
+        },
+        {
+            projectImage: LawConnect,
+            projectTitle: '⚖️ LawConnect',
+            projectDescription: ' full-stack web application designed to modernize how legal professionals and law firms manage their daily operations. From client communication and scheduling to case tracking and fee management, LawConnect unifies all key legal workflows into one intuitive system.',
+            projectTechStack: ['React', 'NodeJS', 'Express', 'MongoDB', 'Mongoose', 'Talwind', 'AWS EC2','Vercel','gemini AI'],
+            githubRepo: 'https://github.com/johnbekele/LawConnect.git',
+            otherLink: 'https://law-connect-two.vercel.app/'
         },
         {
             projectImage: WorkerDay,
