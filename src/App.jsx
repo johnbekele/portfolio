@@ -1,25 +1,24 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import LandingPage from "./components/LandingPage";
 import About from "./components/AboutMe";
-import Landingpage from "./components/LandingPage";
-import Footer from "./components/Footer";
-import Experience from "./components/Experience";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 import ContactMe from "./components/ContactMe";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App space-y-20">
+    <div className="App">
       <NavBar />
-      <Landingpage />
+      <LandingPage />
       <About />
-      <Experience />
+      <Skills />
       <Projects />
-     <ContactMe />
+      <Experience />
+      <ContactMe />
       <Footer />
     </div>
   );

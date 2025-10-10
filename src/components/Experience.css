@@ -1,194 +1,417 @@
-.tabsContainer {
-  /* border: 1px solid red; */
-  width: 82%;
-  margin-left: 10%;
-  padding-top: 8%;
+.experience-section {
+  padding: 100px 20px;
 }
-.tabs {
+
+.experience-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* Company List */
+.company-list {
   display: flex;
-  padding: 10px;
-  /* border: 1px solid blue; */
-}
-.tabList {
-  width: 25%;
-  padding: 5px;
-  /* border: 1px solid blue; */
-}
-.eachTab {
-  /* border: 1px solid blue; */
-  border-left: 2px solid var(--text-grey-color);
-  padding: 10px;
-  padding-left: 18px;
-  font-size: 14px;
-  font-family: var(--secondary-font);
+  flex-direction: column;
+  gap: 8px;
+  position: sticky;
+  top: 100px;
+  height: fit-content;
 }
 
-.selectedTab {
-  color: var(--text-green-color);
-  background-color: var(--tinted-green-color);
-  border-left: 2px solid var(--text-green-color);
-  padding: 10px;
-  padding-left: 20px;
-  font-size: 16px;
-  font-family: var(--secondary-font);
+.company-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background-color: transparent;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-align: left;
 }
 
-.eachTab:hover {
-  background-color: var(--tinted-green-color);
-  border-left: 2px solid var(--text-green-color);
-}
-.eachTab:hover {
-  color: var(--text-green-color);
-}
-
-.tabExpanded {
-  width: 80%;
-  /* border: 1px solid blue; */
-  padding: 10px;
-  padding-left: 40px;
-  margin-top: -40px;
+.company-button:hover {
+  border-color: var(--accent-cyan);
+  background-color: var(--accent-cyan-dim);
+  color: var(--accent-cyan);
+  transform: translateX(4px);
 }
 
-.tabTitle {
-  padding-bottom: 10px;
+.company-button.active {
+  border-color: var(--accent-cyan);
+  background: linear-gradient(90deg, var(--accent-cyan-dim), transparent);
+  color: var(--accent-cyan);
+  border-left-width: 4px;
 }
 
-.tabDuration {
-  padding-bottom: 8px;
-  font-size: 14px;
-  font-family: var(--secondary-font);
-}
-.tabDescription {
-  color: var(--text-grey-color);
-  line-height: 26px;
-  padding-top: 15px;
+.company-name {
+  flex: 1;
 }
 
-.tabExpandedList {
-  margin-top: 15px;
-  margin-left: 25px;
-  line-height: 20px;
+.company-arrow {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all var(--transition-base);
 }
 
-.tabExpandedList ul {
-  list-style: none;
-}
-
-.experiencesList {
-  color: var(--text-grey-color) !important;
-}
-
-.experiencesList:hover {
-  color: var(--text-green-color);
+.company-button:hover .company-arrow,
+.company-button.active .company-arrow {
   opacity: 1;
-  transition: 0.2s;
+  transform: translateX(0);
 }
 
-.tabExpandedList ul li::before {
-  content: "\25B9";
-  color: var(--text-green-color);
+/* Experience Details */
+.experience-details {
+  min-height: 500px;
+}
+
+.experience-card {
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid var(--border-color);
+  animation: fadeInRight 0.5s ease-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.experience-role {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin-bottom: 8px;
+  font-family: var(--font-heading);
+}
+
+.experience-company {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.company-name-detail {
+  color: var(--accent-cyan);
+  font-weight: 600;
+  font-family: var(--font-code);
+}
+
+.separator {
+  color: var(--text-muted);
+}
+
+.experience-type {
+  color: var(--accent-lime);
+  font-family: var(--font-code);
+  font-size: 0.9rem;
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.experience-duration {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-family: var(--font-code);
+  font-weight: 500;
+}
+
+.experience-location {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: 4px 12px;
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+}
+
+.experience-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+/* Achievements */
+.achievements-section {
+  margin-bottom: 24px;
+}
+
+.achievements-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-bottom: 16px;
+  font-family: var(--font-code);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.achievements-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.achievement-item {
+  position: relative;
+  padding-left: 28px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.achievement-item::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-lime);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.achievement-item:hover {
+  color: var(--text-primary);
+}
+
+/* Technologies */
+.experience-tech {
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.tech-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: var(--font-code);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
   display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+  padding: 6px 14px;
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-family: var(--font-code);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
 }
 
-.tabExpandedList li {
-  font-size: 15px;
-  padding-bottom: 10px;
+.tech-tag:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  background-color: var(--accent-cyan-dim);
 }
 
-/* Responsive styles */
+/* Timeline Summary */
+.timeline-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 32px;
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.timeline-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  transition: all var(--transition-base);
+}
+
+.timeline-stat:hover {
+  transform: translateY(-4px);
+  background-color: var(--accent-cyan-dim);
+  border: 1px solid var(--accent-cyan);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  font-family: var(--font-heading);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+  font-family: var(--font-code);
+}
+
+/* Responsive Design */
 @media screen and (max-width: 1024px) {
-  .tabsContainer {
-    width: 95%;
-    margin-left: 2.5%;
+  .experience-container {
+    grid-template-columns: 240px 1fr;
+    gap: 30px;
   }
-  
-  .tabList {
-    width: 30%;
+
+  .company-list {
+    top: 80px;
   }
-  
-  .tabExpanded {
-    width: 70%;
-    padding-left: 30px;
+
+  .timeline-summary {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 768px) {
-  .tabsContainer {
-    width: 100%;
-    margin-left: 0;
-    padding-top: 5%;
+  .experience-section {
+    padding: 60px 16px;
   }
-  
-  .tabs {
-    flex-direction: column;
+
+  .experience-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
-  
-  .tabList {
-    width: 100%;
-    display: flex;
+
+  .company-list {
+    position: static;
+    flex-direction: row;
     overflow-x: auto;
-    border-bottom: 2px solid var(--text-grey-color);
-    margin-bottom: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-cyan) var(--bg-secondary);
+    padding-bottom: 8px;
   }
-  
-  .eachTab, .selectedTab {
-    border-left: none;
-    border-bottom: 2px solid var(--text-grey-color);
-    padding: 10px 15px;
+
+  .company-list::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .company-list::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 3px;
+  }
+
+  .company-list::-webkit-scrollbar-thumb {
+    background: var(--accent-cyan);
+    border-radius: 3px;
+  }
+
+  .company-button {
     white-space: nowrap;
-    font-size: 13px;
+    min-width: fit-content;
   }
-  
-  .selectedTab {
-    border-bottom: 2px solid var(--text-green-color);
+
+  .company-button.active {
+    border-left-width: 2px;
+    border-bottom-width: 4px;
   }
-  
-  .eachTab:hover {
-    border-left: none;
-    border-bottom: 2px solid var(--text-green-color);
+
+  .experience-card {
+    padding: 24px;
   }
-  
-  .tabExpanded {
+
+  .experience-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .experience-meta {
+    align-items: flex-start;
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 0;
   }
-  
-  .tabTitle {
-    font-size: 16px;
+
+  .experience-role {
+    font-size: 1.4rem;
   }
-  
-  .tabExpandedList {
-    margin-left: 15px;
-  }
-  
-  .tabExpandedList li {
-    font-size: 14px;
+
+  .timeline-summary {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .tabsContainer {
-    padding-top: 3%;
+  .experience-card {
+    padding: 20px;
   }
-  
-  .eachTab, .selectedTab {
-    padding: 8px 12px;
-    font-size: 12px;
+
+  .experience-role {
+    font-size: 1.2rem;
   }
-  
-  .tabTitle {
-    font-size: 14px;
+
+  .experience-company {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
   }
-  
-  .tabDescription, .tabExpandedList li {
-    font-size: 13px;
+
+  .separator {
+    display: none;
   }
-  
-  .tabExpandedList {
-    margin-left: 10px;
+
+  .achievement-item {
+    font-size: 0.9rem;
+  }
+
+  .stat-value {
+    font-size: 1.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .experience-card {
+    animation: none;
+  }
+
+  .company-button:hover {
+    transform: none;
+  }
+
+  .timeline-stat:hover {
+    transform: none;
   }
 }
