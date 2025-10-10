@@ -27,3 +27,49 @@
 .navBarItem span {
   color: var(--text-green-color);
 }
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem !important;
+  }
+  
+  .navBarItem {
+    font-size: 12px;
+    gap: 0.5rem !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navBarItem li {
+    white-space: nowrap;
+  }
+  
+  .navBarItem li a button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0.75rem 1rem !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navBarItem {
+    font-size: 11px;
+    gap: 0.25rem !important;
+    margin-top: 0.5rem;
+  }
+  
+  .navBarItem span {
+    display: none;
+  }
+  
+  .navBarItem li a button {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}

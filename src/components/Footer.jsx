@@ -11,7 +11,7 @@ import {
 
 function Footer() {
   const contacts = [
-    { icon: faGithub, link: "https://github.com/yohansbekele12" },
+    { icon: faGithub, link: "https://github.com/johnbekele" },
     { icon: faInstagram, link: "https://www.instagram.com/john_yebk/" },
     {
       icon: faLinkedin,

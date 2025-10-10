@@ -96,3 +96,99 @@
   font-size: 15px;
   padding-bottom: 10px;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  .tabsContainer {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+  
+  .tabList {
+    width: 30%;
+  }
+  
+  .tabExpanded {
+    width: 70%;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tabsContainer {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 5%;
+  }
+  
+  .tabs {
+    flex-direction: column;
+  }
+  
+  .tabList {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    border-bottom: 2px solid var(--text-grey-color);
+    margin-bottom: 20px;
+  }
+  
+  .eachTab, .selectedTab {
+    border-left: none;
+    border-bottom: 2px solid var(--text-grey-color);
+    padding: 10px 15px;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+  
+  .selectedTab {
+    border-bottom: 2px solid var(--text-green-color);
+  }
+  
+  .eachTab:hover {
+    border-left: none;
+    border-bottom: 2px solid var(--text-green-color);
+  }
+  
+  .tabExpanded {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+  }
+  
+  .tabTitle {
+    font-size: 16px;
+  }
+  
+  .tabExpandedList {
+    margin-left: 15px;
+  }
+  
+  .tabExpandedList li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tabsContainer {
+    padding-top: 3%;
+  }
+  
+  .eachTab, .selectedTab {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .tabTitle {
+    font-size: 14px;
+  }
+  
+  .tabDescription, .tabExpandedList li {
+    font-size: 13px;
+  }
+  
+  .tabExpandedList {
+    margin-left: 10px;
+  }
+}

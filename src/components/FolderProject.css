@@ -131,3 +131,59 @@
     }    
 }
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .folderProjectContainer {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .projectBody {
+        height: auto;
+        min-height: 150px;
+    }
+    
+    .projectTitleFolder {
+        font-size: 18px;
+    }
+    
+    .folderProjectDescription {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .fpts li {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .folderProjectContainer {
+        padding: 20px 20px 10px;
+    }
+    
+    .folderIcon {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .projectTitleFolder {
+        font-size: 16px;
+    }
+    
+    .folderProjectDescription {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    .fpts {
+        margin-top: 15px;
+        padding: 8px 12px 10px;
+    }
+    
+    .fpts li {
+        font-size: 12px;
+        padding-bottom: 15px;
+    }
+}

@@ -131,3 +131,54 @@ html {
   display: flex;
   justify-content: space-between;
 }
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+  .sectionContainer {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionContainer {
+    width: 90%;
+    padding-top: 10%;
+    height: auto;
+    min-height: 50vh;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .horizontalLine {
+    width: 50%;
+  }
+  
+  .flexSpaceBetween {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sectionContainer {
+    width: 95%;
+    padding-top: 8%;
+  }
+  
+  .sectionTitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .horizontalLine {
+    width: 40%;
+  }
+  
+  .outlinedBtn {
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+}

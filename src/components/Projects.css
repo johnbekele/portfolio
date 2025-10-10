@@ -9,11 +9,44 @@
 .folderProjectsGrid {
     margin-top: 60px;
     display: grid;
-    /* center elements */
-    /* justify-content: space-evenly; */
-    /* space elements evenly */
-    grid-template-columns: repeat(3, 6vw);
-    grid-template-rows: repeat(0, 6vw);
-    grid-column-gap: 250px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
     grid-row-gap: 20px;
+    max-width: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    .folderProjectsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+    }
+    
+    .folderProjects {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .folderProjectsGrid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+    
+    .folderProjects {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .folderProjects h1 {
+        font-size: 1.5rem;
+        margin-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .folderProjects h1 {
+        font-size: 1.2rem;
+    }
 }

@@ -24,10 +24,10 @@ I work with network testing tools like Nmap, Bettercap, Wireshark, and Metasploi
           </p>
 
           <br></br>
-          <p>Here are a few technologies I’ve been working with recently:</p>
+          <p>Here are a few technologies I've been working with recently:</p>
           <div
             className="flexSpaceBetween list"
-            style={{ width: "540px", marginLeft: "10px" }}
+            style={{ maxWidth: "540px", width: "100%", marginLeft: "10px" }}
           >
             <ul>
               <li> React </li>

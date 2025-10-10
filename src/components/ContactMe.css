@@ -5,7 +5,9 @@
 .salute {
     text-align: center;
     width: 600px;
+    max-width: 90%;
     margin: 10% auto 0%;
+    padding: 0 20px;
 }
 
 .salute h1 {
@@ -23,4 +25,44 @@
 
 .salute button {
     font-size: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .salute {
+        width: 100%;
+        max-width: 95%;
+        margin: 5% auto 0%;
+    }
+    
+    .salute h1 {
+        font-size: 40px;
+    }
+    
+    .salute p {
+        font-size: 16px;
+        margin-bottom: 50px;
+        line-height: 26px;
+    }
+    
+    .salute button {
+        font-size: 18px;
+        padding: 12px 40px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .salute h1 {
+        font-size: 32px;
+    }
+    
+    .salute p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .salute button {
+        font-size: 16px;
+        padding: 10px 30px !important;
+    }
 }
