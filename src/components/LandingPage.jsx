@@ -34,14 +34,15 @@ function LandingPage() {
           </h1>
           
           <h2 className="hero-title">
-            <span className="title-role">DevOps Engineer</span>
+            <span className="title-role">Application Support Analyst</span>
             <span className="title-separator">+</span>
-            <span className="title-role">LLM Developer</span>
+            <span className="title-role">Freelance Web Developer</span>
           </h2>
           
           <p className="hero-tagline">
-            Building reliable CI/CD pipelines, cloud infrastructure, and intelligent AI-powered applications. 
-            I bridge the gap between development and operations while leveraging cutting-edge LLM technologies.
+            I work as an Application Support Analyst maintaining production systems while freelancing as a web developer. 
+            I'm passionate about experimenting with LLMs—building API integrations, exploring agent architectures, vector databases, and RAG chains. 
+            I use Docker, AWS, Kubernetes for deployments and GitHub Actions with Datadog for monitoring, with a strong foundation in infrastructure development.
           </p>
           
           <div className="hero-stack">

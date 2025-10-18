@@ -12,15 +12,15 @@ function About() {
       <div className="about-content">
         <div className="about-text">
           <p className="about-intro">
-            I'm <span className="highlight">Yohans (John) Bekele</span>, a DevOps Engineer and LLM Developer passionate about building scalable infrastructure and intelligent systems.
+            I'm <span className="highlight">Yohans (John) Bekele</span>, an Application Support Analyst and Freelance Web Developer passionate about maintaining production systems and experimenting with cutting-edge LLM technologies.
           </p>
 
           <p className="about-body">
-            I specialize in <strong>automating deployment pipelines</strong>, designing <strong>cloud-native architectures</strong>, and integrating <strong>large language models</strong> into production applications. My expertise spans CI/CD automation, containerization (Docker/Kubernetes), AWS infrastructure, and developing AI-powered solutions with OpenAI/Gemini.
+            In my role as an <strong>Application Support Analyst</strong>, I maintain and troubleshoot production web applications, ensuring optimal performance and reliability. As a <strong>freelance web developer</strong>, I build custom solutions and integrate new features. My passion lies in <strong>LLM experimentation</strong>—I work with API integrations, agent architectures, vector databases, and RAG chains to create intelligent applications.
           </p>
 
           <p className="about-body">
-            With 5+ years of experience across <strong>system automation</strong>, <strong>data engineering</strong>, and <strong>security</strong>, I bring a holistic approach to modern software delivery. I'm constantly exploring new ways to optimize workflows, reduce deployment friction, and leverage AI to solve complex problems.
+            I have strong experience with <strong>infrastructure development</strong> and <strong>deployment automation</strong> using Docker, AWS, and Kubernetes. I leverage GitHub Actions for CI/CD pipelines and Datadog for monitoring and observability. My technical foundation spans web application development, system maintenance, and exploring innovative ways to integrate AI technologies into practical solutions.
           </p>
 
           <div className="about-quick-facts">
@@ -31,8 +31,8 @@ function About() {
                 <path d="M2 12L12 17L22 12" stroke="var(--accent-cyan)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <div>
-                <h4>Cloud-Native Expert</h4>
-                <p>AWS, Docker, Kubernetes, Terraform</p>
+                <h4>Infrastructure & Deployment</h4>
+                <p>AWS, Docker, Kubernetes, GitHub Actions</p>
               </div>
             </div>
 
@@ -42,8 +42,8 @@ function About() {
                 <path d="M12 2V4M12 20V22M4 12H2M6.31 6.31L4.9 4.9M17.69 6.31L19.1 4.9M6.31 17.69L4.9 19.1M17.69 17.69L19.1 19.1M22 12H20" stroke="var(--accent-lime)" strokeWidth="2" strokeLinecap="round"/>
               </svg>
               <div>
-                <h4>LLM Integration</h4>
-                <p>OpenAI, Gemini, LangChain, RAG</p>
+                <h4>LLM Experimentation</h4>
+                <p>API Integration, Agents, Vector DB, RAG</p>
               </div>
             </div>
 
@@ -53,8 +53,8 @@ function About() {
                 <path d="M8 12H16M12 8V16" stroke="var(--accent-cyan)" strokeWidth="2" strokeLinecap="round"/>
               </svg>
               <div>
-                <h4>CI/CD Automation</h4>
-                <p>GitHub Actions, Jenkins, GitLab CI</p>
+                <h4>Application Support</h4>
+                <p>Production Monitoring, Datadog, Troubleshooting</p>
               </div>
             </div>
           </div>
@@ -92,8 +92,8 @@ function About() {
           <div className="floating-icons">
             <div className="float-icon icon-1" title="AWS">☁️</div>
             <div className="float-icon icon-2" title="Docker">🐳</div>
-            <div className="float-icon icon-3" title="AI">🤖</div>
-            <div className="float-icon icon-4" title="Security">🔒</div>
+            <div className="float-icon icon-3" title="LLM">🤖</div>
+            <div className="float-icon icon-4" title="Support">🛠️</div>
           </div>
         </div>
       </div>

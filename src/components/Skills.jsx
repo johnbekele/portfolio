@@ -39,7 +39,7 @@ const Skills = () => {
       icon: '💻',
       color: '--accent-cyan',
       skills: [
-        { name: 'React / Node.js', level: 95, description: 'Full-stack JavaScript development' },
+        { name: 'React / Node.js/FastAPI', level: 95, description: 'Full-stack Web Development' },
         { name: 'MongoDB / PostgreSQL', level: 90, description: 'Database design & management' },
         { name: 'REST APIs', level: 95, description: 'API design & implementation' },
         { name: 'Git & Version Control', level: 95, description: 'Source control management' },
